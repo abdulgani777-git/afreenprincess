@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎁 The Surprise Awaits</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Josefin Sans', sans-serif;
+      background: linear-gradient(to top right, #f8cdda, #1d2b64);
+      overflow: hidden;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-top: 50px;
+    }
+
+    #gift-box {
+      width: 200px;
+      height: 200px;
+      background: gold;
+      border-radius: 20px;
+      margin: 40px auto;
+      position: relative;
+      cursor: pointer;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .key {
+      width: 50px;
+      height: 50px;
+      background: #ffd700;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 20px;
+      animation: float 3s ease-in-out infinite;
+      line-height: 50px;
+      font-size: 1.5rem;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0); }
+    }
+
+    #message-box {
+      display: none;
+      font-size: 1.7rem;
+      margin-top: 30px;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      animation: fadeIn 1s ease-in;
+    }
+
+    #message-box p {
+      margin: 20px 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .btn {
+      padding: 12px 24px;
+      font-size: 1.2rem;
+      margin-top: 20px;
+      border: none;
+      background: #27ae60;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ready for your surprise, Afreen? 😻</h1>
+
+  <div class="key" id="key1">🔑</div>
+  <div class="key" id="key2">🔑</div>
+  <div class="key" id="key3">🔑</div>
+
+  <div id="gift-box" onclick="revealMessage()"></div>
+
+  <div id="message-box">
+    <p>You’re the prettiest, cutest, most special girl I’ve ever met 💖</p>
+    <p>Every moment with you feels magical ✨</p>
+    <p>This entire surprise is just a small piece of how much I care 🫶</p>
+    <p>You're not just beautiful on the outside, but your heart shines even brighter 💫</p>
+    <p>I’ve never met someone like you — you're rare, you're radiant, you're Afreen 💎</p>
+    <p>Your smile is the sunshine that lights up even my darkest days ☀️</p>
+    <p>If perfection had a name, it would be yours 🌹</p>
+    <p>You’re more than special — you’re my peace, my happiness, my miracle ✨</p>
+    <p>Afreen Shazana, you deserve the entire galaxy — but here’s a star from me ⭐</p>
+  </div>
+
+  <script>
+    function revealMessage() {
+      document.getElementById("message-box").style.display = "block";
+      document.getElementById("gift-box").style.display = "none";
+    }
+  </script>
+</body>
+</html>
